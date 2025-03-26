@@ -1,8 +1,12 @@
-# MM-INF: Multimodal Data Synthesis
+# MM-INF: Towards Infinite Multimodal Synthetic Instruction-following Data
 
 This project is built on swift. It can be used to implement a pipeline of multiple LLMs/MLLMs. 
 
 ![Logo](assets/mminf_logo.png)
+
+## 🌟 Why MM-INF?
+
+MM-INF is a multimodal data synthesis framework that can generate diverse and high-quality multimodal data. It contains a automated pipeline of multiple LLMs/MLLMs, which **requires only a single yaml file** to configure. The pipeline can be easily extended to support new tasks. 
 
 ### Oasis: One Image is All You Need for Multimodal Instruction Data Synthesis
 This repo contains an official implementation of **Oasis**, a multimodal data synthesis framework. This method can generate diverse and high-quality multimodal instruction-response data based only on images, without any prior prompt.
@@ -11,9 +15,6 @@ This repo contains an official implementation of **Oasis**, a multimodal data sy
 
 ![image](assets/method-cropped.png)
 
-## 🌟 Why MM-INF?
-
-MM-INF is a multimodal data synthesis framework that can generate diverse and high-quality multimodal data. It contains a automated pipeline of multiple LLMs/MLLMs, which **requires only a single yaml file** to configure. The pipeline can be easily extended to support new tasks.
 
 ## 🛠️ Environment
 
