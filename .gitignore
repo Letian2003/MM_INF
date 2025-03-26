@@ -12,3 +12,4 @@ VLThinking/
 infer_pipeline_LLM.py
 test/
 input_file/
+bench2llm/

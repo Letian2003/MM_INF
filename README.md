@@ -1,6 +1,6 @@
 # MM-INF: Towards Infinite Multimodal Synthetic Instruction-following Data
 
-This project is built on swift. It can be used to implement a pipeline of multiple LLMs/MLLMs. 
+This project aims to efficiently develop multi-modal data synthesis pipelines of multiple LLMs/MLLMs.
 
 ![Logo](assets/mminf_logo.png)
 
