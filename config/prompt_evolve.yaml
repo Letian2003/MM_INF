@@ -1,0 +1,32 @@
+base_config:
+  input_file: input.jsonl
+  save_dir: prompt_evolve
+
+pre_process:
+  model_id_or_path: null
+  pp_func: pp_func.evolve.get_sft_data_instruction_and_response
+
+score:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-72B-Instruct
+  prompt: prompt_func.prompt_response_match_score_prompt.score_prompt
+  pp_func: pp_func.evolve.score_pp
+
+feedback:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-VL-72B-Instruct
+  prompt: prompt_func.prompt_response_match_score_prompt.feedback_prompt
+  pp_func: pp_func.evolve.feedback_pp
+
+optimize:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-72B-Instruct
+  prompt: prompt_func.prompt_response_match_score_prompt.optimize_prompt
+  pp_func: pp_func.evolve.optimize_pp
+
+re_respond:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-VL-72B-Instruct
+  prompt: "{}"
+  pp_func: pp_func.evolve.re_respond
+
+score_2:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-72B-Instruct
+  prompt: prompt_func.prompt_response_match_score_prompt.score_prompt
+  pp_func: pp_func.evolve.score_2_pp

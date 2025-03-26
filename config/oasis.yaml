@@ -1,0 +1,48 @@
+base_config:
+  input_file: input.jsonl
+  save_dir: oasis_dir
+
+# step
+pre_process:
+  name: pre_process
+  model_id_or_path: null
+  pp_func: pp_func.oasis.pre_process
+
+hooking:
+  name: hooking
+  # model_id_or_path: YOUR_PATH_TO/InternVL2_5-78B-MPO
+  model_id_or_path: YOUR_PATH_TO/Qwen2-VL-72B-Instruct
+  prompt: ""
+  oasis: true
+  pp_func: pp_func.oasis.hooking_pp
+
+inst_extract:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-72B-Instruct
+  # model_id_or_path: null
+  prompt: prompt_func.oasis_prompt.extract_query_prompt_new
+  pp_func: pp_func.oasis.inst_extract_pp
+
+solvable_score:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-VL-72B-Instruct
+  prompt: prompt_func.oasis_prompt.inst_unsolvability_prompt
+  pp_func: pp_func.oasis.solvable_pp
+
+hallucination_score:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-VL-72B-Instruct
+  prompt: prompt_func.oasis_prompt.inst_hallucination_prompt
+  pp_func: pp_func.oasis.hallucination_pp
+
+clarity_score:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-VL-72B-Instruct
+  prompt: prompt_func.oasis_prompt.inst_clarity_prompt
+  pp_func: pp_func.oasis.clarity_pp
+
+nonsense_score:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-72B-Instruct
+  prompt: prompt_func.oasis_prompt.inst_nonsense_prompt
+  pp_func: pp_func.oasis.nonsense_pp
+
+respond:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-VL-72B-Instruct
+  prompt: "{}"
+  pp_func: pp_func.oasis.respond_pp

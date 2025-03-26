@@ -1,0 +1,12 @@
+base_config:
+  input_file: DenseFusion.jsonl
+  save_dir: detailed_inst
+
+pre_process:
+  model_id_or_path: null
+  pp_func: pp_func.detailed_inst.pre_process
+
+inst_gen:
+  model_id_or_path: YOUR_PATH_TO/Qwen2.5-72B-Instruct
+  prompt: prompt_func.detailed_inst_prompt.Instruction_generate_prompt
+  pp_func: pp_func.detailed_inst.inst_gen_pp
