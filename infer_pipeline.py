@@ -32,7 +32,7 @@ class MMINFDataSynthesisPipeline:
     def destroy_model(self):
         pass
 
-    def update_model(self, model_id_or_path, max_model_len=32768, limit_mm_per_prompt=None, batch_size=128):
+    def update_model(self, model_id_or_path, max_model_len=32768, limit_mm_per_prompt={'image':5, 'video':2}, batch_size=128):
         """
         更新模型
         :param model_id_or_path: 模型的路径或ID
