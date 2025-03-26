@@ -86,11 +86,10 @@ Please refer to [Commands](docs/Commands.md) documents for more details about th
 
 ## 📚 Usage
 
-MM-INF directory is `mminf`, and the main function is `infer_pipeline.py`.
 
 This project can be used to implement a pipeline of multiple LLMs/MLLMs. User needs to fill in the configuration file, prompt and post-processing function.
 
-The config file is placed in `config/` and the post-processing function is placed in `pp_func/`.
+The main function is `infer_pipeline.py`. The config file is placed in `config/` and the post-processing function is placed in `pp_func/`.
 
 To learn more about the task configuration or custom tasks, please refer to the [Custom Tasks](docs/Custom_tasks.md).
 
