@@ -1,4 +1,5 @@
 !images/
+__pycache__/
 helper/
 oasis_dir/
 caption_conversation/
@@ -12,4 +13,4 @@ VLThinking/
 infer_pipeline_LLM.py
 test/
 input_file/
-bench2llm/
+bench2llm*/
