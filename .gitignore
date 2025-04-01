@@ -1,16 +1,7 @@
 !images/
 __pycache__/
 helper/
-oasis_dir/
-caption_conversation/
-caption_gen/
-caption_hallucination/
-prompt_evolve/
-prompt_response_match_score/
-detailed_inst/
-VLThinking/
 
 infer_pipeline_LLM.py
-test/
 input_file/
-bench2llm*/
+output/
