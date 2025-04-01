@@ -1,6 +1,6 @@
 base_config:
   input_file: DenseFusion.jsonl
-  save_dir: detailed_inst
+  save_dir: ./output/detailed_inst
 
 pre_process:
   model_id_or_path: null

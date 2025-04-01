@@ -1,6 +1,6 @@
 base_config:
   input_file: ./input.jsonl
-  save_dir: ./VLThinking
+  save_dir: ./output/VLThinking
 
 preprocess:
   model_id_or_path: null

@@ -1,6 +1,6 @@
 base_config:
   input_file: input.jsonl
-  save_dir: prompt_response_match_score
+  save_dir: ./output/prompt_response_match_score
 
 pre_process:
   model_id_or_path: null

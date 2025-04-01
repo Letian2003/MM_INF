@@ -1,6 +1,6 @@
 base_config:
   input_file: input.jsonl
-  save_dir: caption_hallucination
+  save_dir: ./output/caption_hallucination
 
 # step
 pre_process:

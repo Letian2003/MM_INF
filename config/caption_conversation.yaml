@@ -1,6 +1,6 @@
 base_config:
   input_file: input.jsonl
-  save_dir: caption_conversation
+  save_dir: ./output/caption_conversation
 
 # step
 pre_process:

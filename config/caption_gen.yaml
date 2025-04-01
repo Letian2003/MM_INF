@@ -1,6 +1,6 @@
 base_config:
   input_file: input.jsonl
-  save_dir: caption_gen
+  save_dir: ./output/caption_gen
 
 pre_process:
   model_id_or_path: null

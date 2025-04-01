@@ -1,6 +1,6 @@
 base_config:
   input_file: input.jsonl
-  save_dir: oasis_dir
+  save_dir: ./output/oasis_dir
 
 # step
 pre_process:

@@ -1,6 +1,6 @@
 base_config:
   input_file: input.jsonl
-  save_dir: prompt_evolve
+  save_dir: ./output/prompt_evolve
 
 pre_process:
   model_id_or_path: null
