@@ -2,6 +2,10 @@
 __pycache__/
 helper/
 
+
+# private files
 infer_pipeline_LLM.py
 input_file/
 output/
+rebuttal/
+vlm2llm/
